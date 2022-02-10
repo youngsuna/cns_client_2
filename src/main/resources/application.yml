@@ -3,11 +3,12 @@ server:
 
 spring:
   application:
-    name: service2 #스프링 컨피그의 디렉토리명 과 일치해야 함
+    name: order-service
 
 eureka:
   instance:
     prefer-ip-address: true
+    instance-id: order-microservice-instance
   client:
     register-with-eureka: true # 유레카 서비스에 (자신을) 등록 여부
     fetch-registry: true
